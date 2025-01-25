@@ -1,4 +1,7 @@
+
 import { useState, useEffect } from "react";
+
+
 
 function useLocalStorage(key, initialValue) {
   // Get from local storage or use initial value
@@ -24,4 +27,6 @@ function useLocalStorage(key, initialValue) {
   return [storedValue, setStoredValue];
 }
 
+
 export default useLocalStorage;
+

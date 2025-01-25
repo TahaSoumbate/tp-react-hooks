@@ -3,17 +3,13 @@ import { ThemeContext } from '../App';
 
 const ThemeToggle = () => {
   const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext);
-  
+
   return (
-    <button
+    <button 
       onClick={() => setIsDarkTheme(!isDarkTheme)}
-      className={`px-5 py-2 rounded ${
-        isDarkTheme 
-          ? 'bg-dark text-light border border-light' 
-          : 'bg-light text-dark border border-dark'
-      }`}
+      className="btn btn-secondary"
     >
-      {isDarkTheme ? 'Mode Clair' : 'Mode Sombre'}
+      {isDarkTheme ? 'Light Mode' : 'Dark Mode'}
     </button>
   );
 };
